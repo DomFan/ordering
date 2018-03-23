@@ -1,0 +1,12 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view class='imgwrap'>
+    <image class='img' src='../../images/2-1.jpg'></image>
+  </view>
+  <view>欢迎光临</view>
+  <view>当前桌号：
+    <text>1</text>
+  </view>
+  <!-- <view>开始点餐</view> -->
+  <button class='order' bindtap='torder'>开始点餐</button>
+</view>

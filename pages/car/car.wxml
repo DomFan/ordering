@@ -1,0 +1,11 @@
+<!--pages/car/car.wxml-->
+<view>这是购物车</view>
+<view>
+  <text>商品1</text>
+  价格：
+  <text>10</text>
+  数量：
+  <button class='btn'>-</button>
+  <text>1</text>
+  <button class='btn'>+</button>
+</view>

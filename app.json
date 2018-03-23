@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/index/index",
+    "pages/car/car",
+    "pages/mine/mine",
+    "pages/order/order",
+    "pages/logs/logs"
+
+  ],
+ "window": {
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#FF9C35",
+  "navigationBarTitleText": "桌边扫",
+  "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#FF9C35",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/home_s.png",
+        "iconPath": "images/home.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      
+      {
+        "selectedIconPath": "images/car_s.png",
+        "iconPath": "images/car.png",
+        "pagePath": "pages/car/car",
+        "text": "购物车"
+      },
+      {
+        "selectedIconPath": "images/mine_s.png",
+        "iconPath": "images/mine.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}
