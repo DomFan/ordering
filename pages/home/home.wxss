@@ -16,10 +16,10 @@ image {
 }
 view {
   text-align: center;
-  padding: 10rpx;
 }
 
 .imgwrap {
+  display: none;
   padding-top:15rpx; 
   width:100%; 
   text-align:center;
@@ -36,3 +36,53 @@ view {
   background-color: #FF9C35;
   margin-top: 20rpx;
 }
+.header {
+  width: 100%;
+  height: 20%;
+  background-color: #87cefa;
+  overflow: hidden;
+  /* padding: 10rpx; */
+}
+
+.itemwrap {
+}
+.itemlist {
+  /* display: flex;
+  flex-wrap: wrap;
+  align-content: space-between; */
+}
+.item {
+  float: left;
+  font-size: 32rpx;
+  width: 50%;
+  height: 420rpx;
+  /* background-color: gray; */
+  padding-top: 20rpx;
+  border-right: 1rpx #c1c1c1 solid;
+  border-top: 1rpx #c1c1c1 solid;
+}
+.img {
+  width: 100%;
+  height: 300rpx;
+}
+.item-footer {
+  width: 100%;
+  overflow: hidden;
+}
+.price {
+  float: left;
+  padding-left: 100rpx;
+}
+.add {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: #FF9C35;
+  text-align: center;
+  line-height: 39rpx;
+  font-size: 40rpx;
+  float: right;
+  margin-right: 20rpx;
+  
+}
+

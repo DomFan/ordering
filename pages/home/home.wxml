@@ -3,10 +3,52 @@
   <view class='imgwrap'>
     <image class='img' src='../../images/2-1.jpg'></image>
   </view>
-  <view>欢迎光临</view>
-  <view>当前桌号：
-    <text>1</text>
+  <view class='header'>
+    <view>欢迎光临</view>
+    <view>当前桌号：
+      <text>1</text>
+    </view>
+    <button class='order' bindtap='torder'>开始点餐</button>
   </view>
-  <!-- <view>开始点餐</view> -->
-  <button class='order' bindtap='torder'>开始点餐</button>
+
+  <!-- <view class='item'>
+    <view class='title'>{{item.name}}</view>
+    <image class='img' src='{{item.url}}'></image>
+    <view class='item-footer'>
+      <view class='price'>￥ {{item.price}}</view>
+      <view class='add' bindtap='setstorage'>+</view>
+    </view>
+  </view> -->
+
+  <!-- <scroll-view class="main-page" style="height:100%;" scroll-y="true" scroll-into-view="{{scroll_into_view}}">
+    <view class="food-list" wx:for="{{foodArray}}" wx:for-item="item" id="foodtype{{index}}">
+      <view class="food__title">{{item.title}}</view>
+      <view class="food-item" wx:for="{{item.foodsIndex}}" wx:for-item="food" wx:for-index="foodidx" id="food{{index}}">
+        <image class="food-left" src='{{food.url}}'></image>
+        <view class="food-right">
+          <view class="food__name">{{food.name}}</view>
+          <view class="food__price">{{food.price}}¥</view>
+          <view class="food__add" data-foodidx="{{index}}{{foodidx}}" data-price="{{food.price}}" data-name="{{food.name}}" catchtap="addShopcart">+</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view> -->
+
+  <view class='itemwrap'>
+    <view class='itemlist' wx:for='{{foodArray}}' wx:key='index' wx:for-item='item' id='foodtype{{index}}'>
+      <view class='item' wx:for='{{item.foodsIndex}}' wx:key='index' wx:for-item='food' wx:for-index='foodidx' id='food{{index}}'>
+        <view class='title'>{{food.name}}</view>
+        <image class='img' src='{{food.url}}'></image>
+        <view class='item-footer'>
+          <view class='price'>￥ {{food.price}}</view>
+          <view class='add' bindtap='setstorage'>+</view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  
+
+
 </view>
+ 

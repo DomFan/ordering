@@ -1,0 +1,591 @@
+{
+  "navArray": [
+    {
+      "title": "当期活动",
+      "url": "http://imgm.4008823823.com.cn/kfcmwos/img//iclasscn13_2016_12_29_18_03_43.png"
+    },
+    {
+      "title": "K Cafe",
+      "url": "http://imgm.4008823823.com.cn/kfcmwos/img//iclasscn13_2017_04_14_12_27_43.png"
+    },
+    {
+      "title": "欢乐送下午茶",
+      "url": "http://imgm.4008823823.com.cn/kfcmwos/img//iclasscn13_2017_04_18_15_07_48.png"
+    },
+    {
+      "title": "WOW桶电影记",
+      "url": "http://imgm.4008823823.com.cn/kfcmwos/img//iclasscn13_2017_04_18_15_17_46.png"
+    },
+    {
+      "title": "当季主打",
+      "url": "http://imgm.4008823823.com.cn/kfcmwos/img//iclasscn13_2017_04_12_15_52_14.png"
+    },
+    {
+      "title": "人气餐盒",
+      "url": "http://imgm.4008823823.com.cn/kfcmwos/img//iclasscn13_2017_04_13_09_36_09.png"
+    },
+    {
+      "title": "超值多人餐",
+      "url": "http://imgm.4008823823.com.cn/kfcmwos/img//iclasscn13_2016_02_25_15_19_07.png"
+    },
+    {
+      "title": "美味汉堡",
+      "url": "http://imgm.4008823823.com.cn/kfcmwos/img//iclasscn13_2016_02_25_15_19_30.png"
+    },
+    {
+      "title": "轻松卷类",
+      "url": "http://imgm.4008823823.com.cn/kfcmwos/img//iclasscn13_2017_04_07_10_16_08.png"
+    },
+    {
+      "title": "K记饭桶",
+      "url": "http://imgm.4008823823.com.cn/kfcmwos/img//iclasscn13_2016_06_07_16_05_01.png"
+    },
+    {
+      "title": "缤纷小食",
+      "url": "http://imgm.4008823823.com.cn/kfcmwos/img//iclasscn13_2017_03_13_13_11_54.png"
+    },
+    {
+      "title": "吮指原味鸡",
+      "url": "http://imgm.4008823823.com.cn/kfcmwos/img//iclasscn13_2016_02_25_15_22_09.png"
+    },
+    {
+      "title": "丰富配餐",
+      "url": "http://imgm.4008823823.com.cn/kfcmwos/img//iclasscn13_2016_02_25_15_23_03.png"
+    },
+    {
+      "title": "甜品儿童餐",
+      "url": "http://imgm.4008823823.com.cn/kfcmwos/img//iclasscn13_2016_02_25_15_23_27.png"
+    },
+    {
+      "title": "缤纷饮料",
+      "url": "http://imgm.4008823823.com.cn/kfcmwos/img//iclasscn13_2016_02_25_15_54_01.png"
+    }
+  ],
+  "foodArray": [
+    {
+      "title": "当期活动",
+      "foodsIndex": [
+        {
+          "name": "避风塘热辣脆皮鸡",
+          "price": "11.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/269_116012.jpg"
+        }
+      ]
+    },
+    {
+      "title": "K cafe",
+      "foodsIndex": [
+        {
+          "name": "咖啡小食随心配套餐",
+          "price": "12.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/270_117807.jpg"
+        },
+        {
+          "name": "法式布蕾拿铁",
+          "price": "17.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/270_117810.jpg"
+        },
+        {
+          "name": "冰法式布蕾拿铁",
+          "price": "17.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/270_117811.jpg"
+        },
+        {
+          "name": "拿铁",
+          "price": "16.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/270_117819.jpg"
+        },
+        {
+          "name": "冰拿铁",
+          "price": "16.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/270_117817.jpg"
+        },
+        {
+          "name": "香草风味拿铁",
+          "price": "17.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/270_117815.jpg"
+        },
+        {
+          "name": "冰香草风味拿铁",
+          "price": "17.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/270_117816.jpg"
+        },
+        {
+          "name": "榛果风味拿铁",
+          "price": "17.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/270_117813.jpg"
+        },
+        {
+          "name": "冰榛果风味拿铁",
+          "price": "17.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/270_117814.jpg"
+        },
+        {
+          "name": "美式",
+          "price": "14.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/270_117812.jpg"
+        }
+      ]
+    },
+    {
+      "title": "欢乐送下午茶",
+      "foodsIndex": [
+        {
+          "name": "下午茶随心配套餐",
+          "price": "18.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/270_116783.jpg"
+        },
+        {
+          "name": "欢乐送下午茶2人组D",
+          "price": "30.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/261_110363.jpg"
+        },
+        {
+          "name": "欢乐送下午茶2人组A",
+          "price": "32.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/231_89521.jpg"
+        },
+        {
+          "name": "欢乐送下午茶2人组B",
+          "price": "38.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/231_89522.jpg"
+        },
+        {
+          "name": "欢乐送下午茶2人组C",
+          "price": "30.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/231_89523.jpg"
+        },
+        {
+          "name": "双拼翅桶",
+          "price": "47.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/231_89344.jpg"
+        },
+        {
+          "name": "五味小吃桶下午茶",
+          "price": "55.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/231_89510.jpg"
+        },
+        {
+          "name": "榴莲蛋挞6只装下午茶",
+          "price": "38.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/269_116019.jpg"
+        },
+        {
+          "name": "葡式蛋挞6只装下午茶",
+          "price": "35.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/231_89343.jpg"
+        },
+        {
+          "name": "伴柠檬伴橘下午茶",
+          "price": "13.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/261_111067.jpg"
+        },
+        {
+          "name": "青金橘鲜果茶下午茶",
+          "price": "13.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/261_111066.jpg"
+        },
+        {
+          "name": "热柠檬红茶（下午茶）",
+          "price": "10.5",
+          "url": "http:////imgm.4008823823.com.cn/kfcmwos/img//S/261_111077.jpg"
+        },
+        {
+          "name": "九珍果汁下午茶",
+          "price": "11.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/261_111082.jpg"
+        }
+      ]
+    },
+    {
+      "title": "WOW桶电影季",
+      "foodsIndex": [
+        {
+          "name": "WOW桶",
+          "price": "59.9",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/265_113202.jpg"
+        }
+      ]
+    },
+    {
+      "title": "当季主打",
+      "foodsIndex": [
+        {
+          "name": "WOW桶",
+          "price": "59.9",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/265_113202.jpg"
+        }
+      ]
+    },
+    {
+      "title": "人气餐盒",
+      "foodsIndex": [
+        {
+          "name": "香辣鸡腿堡餐盒",
+          "price": "39.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/269_115997.jpg"
+        },
+        {
+          "name": "新奥尔良烤腿堡餐盒",
+          "price": "39.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/269_115998.jpg"
+        },
+        {
+          "name": "老北京鸡肉卷餐盒",
+          "price": "39.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/269_115999.jpg"
+        }
+      ]
+    },
+    {
+      "title": "超值多人餐",
+      "foodsIndex": [
+        {
+          "name": "外送五一节日桶B",
+          "price": "96.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/277_122515.jpg"
+        },
+        {
+          "name": "五味小吃桶",
+          "price": "55.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_93417.jpg"
+        },
+        {
+          "name": "外送全家桶",
+          "price": "89.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/266_113975.jpg"
+        },
+        {
+          "name": "超级外送全家桶",
+          "price": "118.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/266_113974.jpg"
+        },
+        {
+          "name": "宝宝双人餐",
+          "price": "68.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/266_113973.jpg"
+        }
+      ]
+    },
+    {
+      "title": "美味汉堡",
+      "foodsIndex": [
+        {
+          "name": "皮卡丘双人分享餐",
+          "price": "65.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/277_122505.jpg"
+        },
+        {
+          "name": "皮卡丘超值个人餐",
+          "price": "42.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/277_122504.jpg"
+        },
+        {
+          "name": "香辣鸡腿堡餐盒",
+          "price": "39.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/269_115997.jpg"
+        },
+        {
+          "name": "新奥尔良烤腿堡餐盒",
+          "price": "39.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/269_115998.jpg"
+        },
+        {
+          "name": "香辣鸡腿堡鸡排餐",
+          "price": "39.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/252_104010.jpg"
+        },
+        {
+          "name": "香辣鸡腿薯条套餐",
+          "price": "34.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/235_91733.jpg"
+        },
+        {
+          "name": "奥尔良烤堡薯条餐盒",
+          "price": "35.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/235_91734.jpg"
+        },
+        {
+          "name": "伴鸡伴虾堡薯条套餐",
+          "price": "36.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/235_91798.jpg"
+        },
+        {
+          "name": "香辣鸡腿堡",
+          "price": "17.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_93011.jpg"
+        },
+        {
+          "name": "新奥尔良烤鸡腿堡",
+          "price": "18.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_93009.jpg"
+        },
+        {
+          "name": "伴鸡伴虾堡",
+          "price": "19.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_93017.jpg"
+        }
+      ]
+    },
+    {
+      "title": "轻松卷类",
+      "foodsIndex": [
+        {
+          "name": "老北京鸡肉卷餐盒",
+          "price": "39.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/269_115999.jpg"
+        },
+        {
+          "name": "老北京鸡肉卷薯条餐",
+          "price": "33.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/140_47226.jpg"
+        },
+        {
+          "name": "老北京鸡肉卷",
+          "price": "15.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_92977.jpg"
+        }
+      ]
+    },
+    {
+      "title": "K记饭桶",
+      "foodsIndex": [
+        {
+          "name": "海苔岩烧大鸡腿餐A",
+          "price": "39.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/231_89729.jpg"
+        },
+        {
+          "name": "海苔岩烧大鸡腿餐B",
+          "price": "39.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/231_89730.jpg"
+        },
+        {
+          "name": "海苔岩烧大鸡腿饭",
+          "price": "24.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/231_89728.jpg"
+        },
+        {
+          "name": "日式咖喱鸡饭大桶",
+          "price": "23.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/231_89575.jpg"
+        }
+      ]
+    },
+    {
+      "title": "缤纷小食",
+      "foodsIndex": [
+        {
+          "name": "藤椒肯大大鸡排",
+          "price": "12.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/252_104011.jpg"
+        },
+        {
+          "name": "十块香辣鸡翅",
+          "price": "43.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/231_89136.jpg"
+        },
+        {
+          "name": "十块新奥尔良烤翅",
+          "price": "46.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/231_89737.jpg"
+        },
+        {
+          "name": "黄金鸡块十块装",
+          "price": "18.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/140_47025.jpg"
+        },
+        {
+          "name": "二块新奥尔良烤翅",
+          "price": "11.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_93095.jpg"
+        },
+        {
+          "name": "二根骨肉相连加",
+          "price": "13.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_93408.jpg"
+        },
+        {
+          "name": "一根骨肉相连加",
+          "price": "8.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_92938.jpg"
+        },
+        {
+          "name": "劲爆鸡米花（大）",
+          "price": "13.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_93293.jpg"
+        },
+        {
+          "name": "劲爆鸡米花（小）",
+          "price": "11",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_93292.jpg"
+        },
+        {
+          "name": "二块香辣鸡翅",
+          "price": "10.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_93010.jpg"
+        },
+        {
+          "name": "黄金鸡块五块装",
+          "price": "10",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_93014.jpg"
+        }
+      ]
+    },
+    {
+      "title": "吮指原味鸡",
+      "foodsIndex": [
+        {
+          "name": "六块吮指原味鸡",
+          "price": "54.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/140_47042.jpg"
+        },
+        {
+          "name": "九块吮指原味鸡",
+          "price": "79.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/140_47039.jpg"
+        },
+        {
+          "name": "吮指原味鸡套餐A",
+          "price": "35.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_92942.jpg"
+        },
+        {
+          "name": "吮指原味鸡套餐B",
+          "price": "38.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_93268.jpg"
+        },
+        {
+          "name": "一块新奥尔良烤翅",
+          "price": "11",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_93289.jpg"
+        },
+        {
+          "name": "避风塘热辣脆皮鸡",
+          "price": "11",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/269_116012.jpg"
+        }
+      ]
+    },
+    {
+      "title": "丰富配餐",
+      "foodsIndex": [
+        {
+          "name": "波纹霸王薯条",
+          "price": "11.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/150_51043.jpg"
+        },
+        {
+          "name": "芙蓉荟蔬汤",
+          "price": "8.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_92944.jpg"
+        },
+        {
+          "name": "香甜玉米棒",
+          "price": "8.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_92976.jpg"
+        },
+        {
+          "name": "醇香土豆泥",
+          "price": "6.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_92945.jpg"
+        },
+        {
+          "name": "鲜蔬沙拉",
+          "price": "13.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_93389.jpg"
+        }
+      ]
+    },
+    {
+      "title": "丰富配餐",
+      "foodsIndex": [
+        {
+          "name": "快乐儿童餐A",
+          "price": "29.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_92967.jpg"
+        },
+        {
+          "name": "快乐儿童餐B",
+          "price": "30.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_92968.jpg"
+        },
+        {
+          "name": "榴莲蛋挞6只装",
+          "price": "38.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/269_116017.jpg"
+        },
+        {
+          "name": "榴莲蛋挞",
+          "price": "8.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/269_116018.jpg"
+        },
+        {
+          "name": "葡式蛋挞1只装",
+          "price": "7.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_93013.jpg"
+        },
+        {
+          "name": "巧克力圣代",
+          "price": "8.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_92890.jpg"
+        },
+        {
+          "name": "草莓圣代",
+          "price": "7.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_92889.jpg"
+        },
+        {
+          "name": "红豆派",
+          "price": "6.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_92884.jpg"
+        }
+      ]
+    },
+    {
+      "title": "缤纷饮料",
+      "foodsIndex": [
+        {
+          "name": "伴柠伴橘鲜果茶",
+          "price": "13.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/258_108207.jpg"
+        },
+        {
+          "name": "黄金橘新果茶",
+          "price": "13.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/258_108208.jpg"
+        },
+        {
+          "name": "热柠檬红茶",
+          "price": "13.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/221_83511.jpg"
+        },
+        {
+          "name": "1.25升装百事可乐",
+          "price": "12.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_92971.jpg"
+        },
+        {
+          "name": "九珍果汁饮料",
+          "price": "11.0",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_93012.jpg"
+        },
+        {
+          "name": "经典咖啡",
+          "price": "7.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/221_83148.jpg"
+        },
+        {
+          "name": "雀巢果味C",
+          "price": "8.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_92855.jpg"
+        },
+        {
+          "name": "热牛奶12pz",
+          "price": "10.5",
+          "url": "http://imgm.4008823823.com.cn/kfcmwos/img//S/237_92963.jpg"
+        }
+      ]
+    }
+  ]
+}
