@@ -5,34 +5,111 @@ Page({
    * 页面的初始数据
    */
   data: {
-    shopList: []
+    shopList: [],
+    total: 0,
+    count: 0
 
   },
   
+  // 删除商品
+  deleteShopcartInCart: function (e) {
+    // 选定被点击的元素
+    let addTarget = this.data.shopList.findIndex(item => item.name === e.target.dataset.name);
+    let tempPrice = 0;
+    let count = this.data.count - 1;
+    this.data.shopList[addTarget].num--;
+
+    // 如果减少后商品数量为0
+    if (this.data.shopList[addTarget].num < 1) {
+      // 总价的减少
+      tempPrice = parseInt(this.data.total) - parseInt(this.data.shopList[addTarget].price)
+      this.data.shopList.splice(addTarget, 1);
+      // console.log(this.data.total)
+
+      this.setData({
+        total: tempPrice
+      })
+    } else {
+      // 计算出来新的价格
+      tempPrice = parseInt(this.data.total) - parseInt(this.data.shopList[addTarget].price)
+      // console.log(this.data.total)
+    }
+    this.setData({
+      shopList: this.data.shopList,
+      total: tempPrice,
+      count: count
+    })
+    wx.setStorageSync('storageList', this.data.shopList)
+    wx.setStorageSync('count', this.data.count)
+    wx.setStorageSync('total', this.data.total)  // ??
+
+    // console.log('删除商品时，', wx.getStorageSync('storageList'), wx.getStorageSync('total'), wx.getStorageSync('count'))
+  },
+
+  // 添加商品
+  addShopcartInCart: function (e) {
+    let count = this.data.count + 1;
+    // 添加的商品
+    let addTarget = this.data.shopList.findIndex(item => item.name === e.target.dataset.name);
+    this.data.shopList[addTarget].num++;
+    // 计算新的总价
+    let tempPrice = parseInt(this.data.total) + parseInt(this.data.shopList[addTarget].price)
+    this.setData({
+      shopList: this.data.shopList,
+      total: tempPrice,
+      count: count
+    })
+
+    wx.setStorageSync('storageList', this.data.shopList)
+    wx.setStorageSync('count', this.data.count)
+    wx.setStorageSync('total', this.data.total)
+    // console.log('添加商品时，', wx.getStorageSync('storageList'), wx.getStorageSync('total'), wx.getStorageSync('count'))
+  },
+
+  //
+
+
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let shopList = wx.getStorageSync('storageList')
-    if (shopList.length > 0) {
-      this.setData({ shopList })
-    }
-    console.log(this.data.shopList)
+    let shopList = wx.getStorageSync('storageList'),
+        total = wx.getStorageSync('total'),
+        count = wx.getStorageSync('count')
+
+    shopList.length > 0 ? this.setData({ shopList }) : ''
+    total > 0 ? this.setData({ total }) : ''
+    count > 0 ? this.setData({ count }) : ''
+    console.log('购物车页面加载时，', wx.getStorageSync('storageList'), wx.getStorageSync('total'), wx.getStorageSync('count'))
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    let shopList = wx.getStorageSync('storageList'),
+      total = wx.getStorageSync('total'),
+      count = wx.getStorageSync('count')
+
+    shopList.length > 0 ? this.setData({ shopList }) : ''
+    total > 0 ? this.setData({ total }) : ''
+    count > 0 ? this.setData({ count }) : ''
+    // console.log('购物车页面初次渲染完成时，', wx.getStorageSync('storageList'), wx.getStorageSync('total'), wx.getStorageSync('count'))
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    let shopList = wx.getStorageSync('storageList'),
+      total = wx.getStorageSync('total'),
+      count = wx.getStorageSync('count')
+
+    shopList.length > 0 ? this.setData({ shopList }) : ''
+    total > 0 ? this.setData({ total }) : ''
+    count > 0 ? this.setData({ count }) : ''
+    console.log('购物车页面显示时，', wx.getStorageSync('storageList'), wx.getStorageSync('total'), wx.getStorageSync('count'))
   },
 
   /**

@@ -1,6 +1,6 @@
 // pages/home/home.js
 Page({
-
+// 点餐小程序中购物车页面及逻辑修改，从商品列表中分离到导航栏中，布局修改。
   /**
    * 页面的初始数据
    */
@@ -23,6 +23,7 @@ Page({
   },
 
   torder: function () {
+    return
     console.log('go')
     // wx.switchTab({
       //   url: '../order/order',
@@ -51,10 +52,11 @@ Page({
         total = this.data.total,
         count = this.data.count + 1
 
+    // 每添加一次计算商品总价格
     total = parseInt(total) + parseInt(e.target.dataset.price);
     // 同步获取数据缓存 storageList
     let storageList = wx.getStorageSync('storageList')
-    console.log('上一次添加的数据缓存', storageList, '当前点击的商品',  e.target.dataset)
+    // console.log('上一次添加的数据缓存', storageList, '当前点击的商品',  e.target.dataset)
     // 条件判断
     // 商品列表中是否有商品
     if (that.data.shopList.length > 0) {
@@ -82,10 +84,18 @@ Page({
         num: itemNum
       })
     }
+    that.setData({
+      total,
+      count
+    })
     // 同步将数据添加到缓存
     wx.setStorageSync('storageList', that.data.shopList)
     // console.log('shopList', that.data.shopList)
-    console.log('现在的数据缓存中的数据', wx.getStorageSync('storageList'))
+    wx.setStorageSync('total', that.data.total)
+    wx.setStorageSync('count', that.data.count)
+
+
+    console.log('现在的数据缓存中的数据', wx.getStorageSync('storageList'), '总价', this.data.total, '总数', this.data.count)
   },
   /**
    * 生命周期函数--监听页面加载
@@ -93,6 +103,8 @@ Page({
   onLoad: function (options) {
     // 页面加载时 创建新的数据缓存 是否有必要？
     wx.setStorageSync('storageList', new Array)
+    wx.setStorageSync('total', 0)
+    wx.setStorageSync('count', 0)
 
     let that = this
     wx.showToast({
@@ -119,20 +131,35 @@ Page({
     }, function () {
       wx.hideToast();
     })
+
+    console.log('页面加载时，', wx.getStorageSync('storageList'), wx.getStorageSync('total'), wx.getStorageSync('count'))
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    let shopList = wx.getStorageSync('storageList'),
+      total = wx.getStorageSync('total'),
+      count = wx.getStorageSync('count')
+
+    shopList.length > 0 ? this.setData({ shopList }) : ''
+    total > 0 ? this.setData({ total }) : ''
+    count > 0 ? this.setData({ count }) : ''
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    let shopList = wx.getStorageSync('storageList'),
+        total = wx.getStorageSync('total'),
+        count = wx.getStorageSync('count')
+    shopList.length > 0 ? this.setData({ shopList }) : ''
+    total > 0 ? this.setData({ total }) : ''
+    count > 0 ? this.setData({ count }) : ''
+
+    console.log('首页显示时onShow', wx.getStorageSync('storageList'), wx.getStorageSync('total'), wx.getStorageSync('count'))
   },
 
   /**

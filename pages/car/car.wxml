@@ -4,11 +4,11 @@
     <view class="shopcart-main">
       <view class="shopcart-left">
         <image src="../../images/car_s.png" class="shopcart__icon"></image>
-        <view class="shopcart__count">{{totalCount}}</view>
+        <view class="shopcart__count">{{count}}</view>
       </view>
       <view class="shopcart-middle">
         <view class="shopcart__price">¥
-          <text>{{totalPrice}}</text>
+          <text>{{total}}</text>
         </view>
       </view>
       <view class="shopcart-right" catchtap="toCount">
@@ -17,20 +17,8 @@
     </view>
   </view>
 
-  <view wx:for='{{shopList}}' wx:key='index' wx:for-item='item'>
-    <view>
-      <view>{{item.name}}</view>
-      <view>￥{{item.price}}</view>
-      <view>
-        <view>-</view>
-        <view>{{item.num}}</view>
-        <view>+</view>
-      </view>
-    </view>
-  </view>
-
   <!-- <view class="list-mask" hidden="{{cartIndexIsHidden}}" animation="{{animationData}}"> -->
-  <view class="list-mask" hidden>
+  <view class="list-mask">
     <view class="shopcart__items" wx:for="{{shopList}}" wx:key='index' wx:for-item="item">
       <view class="shopcart__item" hidden="{{cartIndexIsHidden}}">
         <view class="cart__left">
