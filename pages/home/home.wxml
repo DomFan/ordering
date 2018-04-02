@@ -41,7 +41,7 @@
         <image class='img' src='{{food.url}}'></image>
         <view class='item-footer'>
           <view class='price'>￥ {{food.price}}</view>
-          <view class='add' bindtap='setstorage'>+</view>
+          <view class='add' data-foodidx='{{index}}{{foodidx}}' data-price='{{food.price}}' data-name='{{food.name}}' catchtap='addShopcart'>+</view>
         </view>
       </view>
 

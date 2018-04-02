@@ -1,11 +1,47 @@
 <!--pages/car/car.wxml-->
-<view>这是购物车</view>
-<view>
-  <text>商品1</text>
-  价格：
-  <text>10</text>
-  数量：
-  <button class='btn'>-</button>
-  <text>1</text>
-  <button class='btn'>+</button>
-</view>
+
+  <view class="shopcart" bindtap="showCart" hidden="{{cartIsHidden}}">
+    <view class="shopcart-main">
+      <view class="shopcart-left">
+        <image src="../../images/car_s.png" class="shopcart__icon"></image>
+        <view class="shopcart__count">{{totalCount}}</view>
+      </view>
+      <view class="shopcart-middle">
+        <view class="shopcart__price">¥
+          <text>{{totalPrice}}</text>
+        </view>
+      </view>
+      <view class="shopcart-right" catchtap="toCount">
+        <text>选好了</text>
+      </view>
+    </view>
+  </view>
+
+  <view wx:for='{{shopList}}' wx:key='index' wx:for-item='item'>
+    <view>
+      <view>{{item.name}}</view>
+      <view>￥{{item.price}}</view>
+      <view>
+        <view>-</view>
+        <view>{{item.num}}</view>
+        <view>+</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- <view class="list-mask" hidden="{{cartIndexIsHidden}}" animation="{{animationData}}"> -->
+  <view class="list-mask" hidden>
+    <view class="shopcart__items" wx:for="{{shopList}}" wx:key='index' wx:for-item="item">
+      <view class="shopcart__item" hidden="{{cartIndexIsHidden}}">
+        <view class="cart__left">
+          <view class="item__h3">{{item.name}}</view>
+          <view class="item__price">¥{{item.price}}</view>
+        </view>
+        <view class="cart__right">
+          <view class="food__add food__add--delete" data-foodidx="{{index}}" data-price="{{item.price}}" data-name="{{item.name}}" catchtap="deleteShopcartInCart">-</view>
+          <text>{{item.num}}</text>
+          <view class="food__add" data-foodidx="{{index}}" data-price="{{item.price}}" data-name="{{item.name}}" catchtap="addShopcartInCart">+</view>
+        </view>
+      </view>
+    </view>
+  </view>

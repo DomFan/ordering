@@ -26,13 +26,20 @@
 }
 .card-info{
   width: 80%;
-  height:180rpx;
+  /* height: 180rpx; */
+  height: 50rpx;
   box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(255, 156, 53, 10);
   z-index: 1000;
   background: white;
   padding: 10px;
 }
 .card-box{
- 
   margin-top:-20px;
+}
+.none {
+  display: none;
+}
+.down-center {
+  /* height:50%; */
+  /* border-bottom:1px solid #E3E3E3; */
 }
