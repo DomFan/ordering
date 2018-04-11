@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/home/home",
+    "pages/aaa/aaa",
     "pages/index/index",
     "pages/car/car",
     "pages/mine/mine",

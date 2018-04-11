@@ -82,7 +82,19 @@ view {
   line-height: 39rpx;
   font-size: 40rpx;
   float: right;
-  margin-right: 20rpx;
+  margin-right: 100rpx;
   
 }
-
+/*抛物线动画*/
+.good_box{
+  width: 18px;
+  height: 18px;
+  position: fixed;
+  border-radius: 50%;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  z-index: +99;
+  /* background:rgba(0,133,207,1); */
+  background: #FF9C35;
+}

@@ -1,4 +1,5 @@
 // pages/home/home.js
+let app = getApp()
 Page({
 // 点餐小程序中购物车页面及逻辑修改，从商品列表中分离到导航栏中，布局修改。
   /**
@@ -19,7 +20,12 @@ Page({
     total: 0,
     // 购物车商品数量
     count: 0,
-
+    list: [{ id: 1, name: '全部', number: 28, }, { id: 2, name: '店铺预约', number: 28, }, { id: 3, name: '产品预约', number: 28, }, { id: 4, name: '领券预约', number: 28, }, { id: 5, name: '拼团预约', number: 28, }, ],
+    // 是否隐藏小球
+    hide_good_box: true,
+  },
+  print: function (e) {
+    console.log(e.target.dataset)
   },
 
   torder: function () {
@@ -50,7 +56,11 @@ Page({
         itemNum = 1,
         // 总价
         total = this.data.total,
-        count = this.data.count + 1
+        count = this.data.count + 1,
+        rollX = e.touches["0"].clientX, // X坐标
+        rollY = e.touches["0"].clientY  // Y坐标
+
+    console.log('roll--', rollX, rollY)
 
     // 每添加一次计算商品总价格
     total = parseInt(total) + parseInt(e.target.dataset.price);
@@ -96,11 +106,76 @@ Page({
 
 
     console.log('现在的数据缓存中的数据', wx.getStorageSync('storageList'), '总价', this.data.total, '总数', this.data.count)
+
+    // 点击时手指位置
+    this.finger = {};
+    // 顶点位置
+    var topPoint = {};
+    // 点击的坐标
+    this.finger['x'] = e.touches["0"].clientX;
+    this.finger['y'] = e.touches["0"].clientY;
+
+    if (this.finger['y'] < this.busPos['y']) {
+      topPoint['y'] = this.finger['y'] - 200;
+    } else {
+      topPoint['y'] = this.busPos['y'] - 200;
+    }
+    // Math.abs() 取绝对值
+    // topPoint['x'] = Math.abs(this.finger['x'] - this.busPos['x']) / 2;
+
+    if (this.finger['x'] > this.busPos['x']) {
+      topPoint['x'] = (this.finger['x'] - this.busPos['x']) / 2 + this.busPos['x'];
+    } else {//
+      topPoint['x'] = (this.busPos['x'] - this.finger['x']) / 2 + this.finger['x'];
+    }
+
+    //topPoint['x'] = this.busPos['x'] + 80
+    // this.linePos = app.bezier([this.finger, topPoint, this.busPos], 30);
+    this.linePos = app.bezier([this.busPos, topPoint, this.finger], 30);
+    this.startAnimation(e);
+  },
+
+  // 动画
+  startAnimation: function (e) {
+    var index = 0, 
+        that = this,
+        bezier_points = that.linePos['bezier_points'];
+
+    this.setData({
+      hide_good_box: false,
+      bus_x: that.finger['x'],
+      bus_y: that.finger['y']
+    })
+    var len = bezier_points.length;
+    index = len
+    this.timer = setInterval(function () {
+      index--;
+      that.setData({
+        bus_x: bezier_points[index]['x'],
+        bus_y: bezier_points[index]['y']
+      })
+      if (index < 1) {
+        clearInterval(that.timer);
+        // that.addGoodToCartFn(e);
+        that.setData({
+          hide_good_box: true
+        })
+      }
+    }, 20);
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log('options--', options)
+
+    // 购物车位置
+    this.busPos = {};
+    // this.busPos['x'] = 45;
+    // this.busPos['x'] = app.globalData.ww/2;
+    this.busPos['x'] = 90;
+    this.busPos['y'] = app.globalData.hh + 20;
+
     // 页面加载时 创建新的数据缓存 是否有必要？
     wx.setStorageSync('storageList', new Array)
     wx.setStorageSync('total', 0)
@@ -128,7 +203,8 @@ Page({
           foodArray: res.data.foodArray
         })
       }
-    }, function () {
+    }, 
+    function () {
       wx.hideToast();
     })
 

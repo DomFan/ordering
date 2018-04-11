@@ -11,27 +11,19 @@
     <button class='order' bindtap='torder'>开始点餐吧</button>
   </view>
 
-  <!-- <view class='item'>
-      <view class='title'>{{item.name}}</view>
-      <image class='img' src='{{item.url}}'></image>
-      <view class='item-footer'>
-        <view class='price'>￥ {{item.price}}</view>
-        <view class='add' bindtap='setstorage'>+</view>
+  <view class='test' style='display: none;'>
+    <view style='width:200rpx; height: 100rpx;' wx:for='{{list}}' wx:for-item='pre' wx:key='index'>
+      <view>
+        <text data-name='{{pre.name}}' data-number='{{pre.number}}' catchtap='print'>{{pre.name}}</text>
+        <text>{{pre.number}}</text>
       </view>
-    </view> -->
-    <!-- <scroll-view class="main-page" style="height:100%;" scroll-y="true" scroll-into-view="{{scroll_into_view}}">
-      <view class="food-list" wx:for="{{foodArray}}" wx:for-item="item" id="foodtype{{index}}">
-        <view class="food__title">{{item.title}}</view>
-        <view class="food-item" wx:for="{{item.foodsIndex}}" wx:for-item="food" wx:for-index="foodidx" id="food{{index}}">
-          <image class="food-left" src='{{food.url}}'></image>
-          <view class="food-right">
-            <view class="food__name">{{food.name}}</view>
-            <view class="food__price">{{food.price}}¥</view>
-            <view class="food__add" data-foodidx="{{index}}{{foodidx}}" data-price="{{food.price}}" data-name="{{food.name}}" catchtap="addShopcart">+</view>
-          </view>
-        </view>
-      </view>
-    </scroll-view> -->
+    </view>
+  </view>
+
+  <!-- 小球  -->
+  <view class="good_box" hidden="{{hide_good_box}}"  style="left: {{bus_x}}px; top: {{bus_y}}px;">
+  </view>
+
 
   <view class='itemwrap'>
     <view class='itemlist' wx:for='{{foodArray}}' wx:key='index' wx:for-item='item' id='foodtype{{index}}'>
