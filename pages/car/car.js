@@ -66,7 +66,36 @@ Page({
     // console.log('添加商品时，', wx.getStorageSync('storageList'), wx.getStorageSync('total'), wx.getStorageSync('count'))
   },
 
-  //
+  // 结算
+  toCount: function (e) {
+    console.log('go to count')
+    let that = this
+
+    wx.requestPayment({
+      timeStamp: '',
+      nonceStr: '',
+      package: '',
+      signType: '',
+      paySign: '',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+    return
+    wx.request({
+      url: '',
+      data: '',
+      header: {},
+      method: 'GET',
+      dataType: 'json',
+      responseType: 'text',
+      success: function(res) {
+
+      },
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
 
 
 

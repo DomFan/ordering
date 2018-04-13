@@ -116,9 +116,9 @@ Page({
     this.finger['y'] = e.touches["0"].clientY;
 
     if (this.finger['y'] < this.busPos['y']) {
-      topPoint['y'] = this.finger['y'] - 200;
+      topPoint['y'] = this.finger['y'] - 150;
     } else {
-      topPoint['y'] = this.busPos['y'] - 200;
+      topPoint['y'] = this.busPos['y'] - 150;
     }
     // Math.abs() 取绝对值
     // topPoint['x'] = Math.abs(this.finger['x'] - this.busPos['x']) / 2;
@@ -150,6 +150,8 @@ Page({
     index = len
     this.timer = setInterval(function () {
       index--;
+      // 条件控制 清零时 return
+      if (!bezier_points[index]) { return }
       that.setData({
         bus_x: bezier_points[index]['x'],
         bus_y: bezier_points[index]['y']
@@ -158,7 +160,7 @@ Page({
         clearInterval(that.timer);
         // that.addGoodToCartFn(e);
         that.setData({
-          hide_good_box: true
+          hide_good_box: true 
         })
       }
     }, 20);
@@ -173,7 +175,7 @@ Page({
     this.busPos = {};
     // this.busPos['x'] = 45;
     // this.busPos['x'] = app.globalData.ww/2;
-    this.busPos['x'] = 90;
+    this.busPos['x'] = 56;
     this.busPos['y'] = app.globalData.hh + 20;
 
     // 页面加载时 创建新的数据缓存 是否有必要？

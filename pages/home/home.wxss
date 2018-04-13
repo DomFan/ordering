@@ -82,7 +82,7 @@ view {
   line-height: 39rpx;
   font-size: 40rpx;
   float: right;
-  margin-right: 100rpx;
+  margin-right: 20rpx;
   
 }
 /*抛物线动画*/
