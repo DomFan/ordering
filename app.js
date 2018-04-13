@@ -1,6 +1,7 @@
 //app.js
 App({
   onLaunch: function () {
+    
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -9,7 +10,7 @@ App({
     let that = this;
     wx.getSystemInfo({//  获取页面的有关信息
       success: function (res) {
-
+        console.log('getSystemInfo', res)
         wx.setStorageSync('systemInfo', res)
         var ww = res.windowWidth;
         var hh = res.windowHeight;
@@ -17,14 +18,38 @@ App({
         that.globalData.hh = hh;
       }
     });
+    // console.log(that.globalData.ww, that.globalData.hh)
 
-    console.log(that.globalData.ww, that.globalData.hh)
+    // 获取用户相关信息
+    wx.getUserInfo({
+      withCredentials: true,
+      success: function(res) {
+        console.log('getUserInfo', res)
+        // {avatarUrl:       "https://wx.qlogo.cn/mmopen/vi_32/DYAIOgq83eqOibyjDOz1oFuVBZdibnSLljUAkCMfibSxUtdaerJiblm3wJbnZsEiavgS2tbkmKPkCD9VtFmibhJK62EQ/0",         city: "Chaoyang", country: "China", gender: 1, language: "zh_CN", nickName: "范儿", province: "Beijing" }
+        wx.setStorageSync('userInfo', res.userInfo)
+      },
+      fail: function(res) {},
+      complete: function(res) {},
+    })
 
     // 登录
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
-        console.log('login,', res)
+        console.log('login,', res, res.code)
+        if (res.code) {
+          return
+          //发起网络请求
+          wx.request({
+            url: '',
+            data: {
+              code: res.code
+            }
+          })
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
+
       }
     })
     // 获取用户信息

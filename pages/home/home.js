@@ -6,6 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    userInfo: {},
     item: {
       "name": "咖啡小食随心配套餐",
       "price": "12.0",
@@ -170,6 +171,9 @@ Page({
    */
   onLoad: function (options) {
     console.log('options--', options)
+
+    let userInfo = wx.getStorageSync('userInfo')
+    this.setData({ userInfo })
 
     // 购物车位置
     this.busPos = {};

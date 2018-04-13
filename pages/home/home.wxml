@@ -4,7 +4,10 @@
     <image class='img' src='../../images/2-1.jpg'></image>
   </view>
   <view class='header'>
-    <view>欢迎光临</view>
+    <view>
+      <text wx:if='{{userInfo.nickName}}'>{{userInfo.nickName}}, </text>
+      欢迎光临
+    </view>
     <view>当前桌号：
       <text>1</text>
     </view>

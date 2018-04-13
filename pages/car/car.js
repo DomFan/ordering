@@ -10,6 +10,25 @@ Page({
     count: 0
 
   },
+  gotoCount: function (e) {
+    // 商户ID：2088621816522223
+    console.log('确认付款')
+    let that = this,
+        timeStamp = Date.parse(new Data()),
+        nonceStr = '12387919873'
+    wx.requestPayment({
+      timeStamp: '',
+      nonceStr: '',
+      package: '',
+      signType: '',
+      paySign: '',
+      success: function(res) {
+
+      },
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
   
   // 删除商品
   deleteShopcartInCart: function (e) {
@@ -69,7 +88,9 @@ Page({
   // 结算
   toCount: function (e) {
     console.log('go to count')
-    let that = this
+    let that = this,
+        timeStamp = new Date()
+
 
     wx.requestPayment({
       timeStamp: '',
@@ -97,7 +118,9 @@ Page({
     })
   },
 
-
+  toClear: function (e) {
+    console.log('清空购物车')
+  },
 
   /**
    * 生命周期函数--监听页面加载
