@@ -6,6 +6,7 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+    wx.setStorageSync('appId', 'wxf44e40ccfe45397e')
 
     let that = this;
     wx.getSystemInfo({//  获取页面的有关信息
@@ -43,7 +44,11 @@ App({
           wx.request({
             url: '',
             data: {
-              code: res.code
+              code: res.code,
+              appId: 'wxf44e40ccfe45397e'
+            },
+            success: function (res) {
+              console.log('login -> code -> openId', res)
             }
           })
         } else {
