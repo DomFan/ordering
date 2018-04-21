@@ -178,8 +178,8 @@ Page({
     // 购物车位置
     this.busPos = {};
     // this.busPos['x'] = 45;
-    // this.busPos['x'] = app.globalData.ww/2;
-    this.busPos['x'] = 56;
+    this.busPos['x'] = app.globalData.ww/2 - 10;
+    // this.busPos['x'] = 56;
     this.busPos['y'] = app.globalData.hh + 20;
 
     // 页面加载时 创建新的数据缓存 是否有必要？

@@ -28,7 +28,7 @@
   </view>
 
 
-  <view class='itemwrap'>
+  <!-- <view class='itemwrap'>
     <view class='itemlist' wx:for='{{foodArray}}' wx:key='index' wx:for-item='item' id='foodtype{{index}}'>
       <view class='item' wx:for='{{item.foodsIndex}}' wx:key='index' wx:for-item='food' wx:for-index='foodidx' id='food{{index}}'>
         <view class='title'>{{food.name}}</view>
@@ -40,8 +40,21 @@
       </view>
 
     </view>
-  </view>
+  </view> -->
   
+  <view class='itemWrap'>
+    <view class='itemList' wx:for='{{foodArray}}' wx:key='index' wx:for-item='item' id='foodtype{{index}}'>
+      <view class='items' wx:for='{{item.foodsIndex}}' wx:key='index' wx:for-item='food' wx:for-index='foodidx' id='food{{index}}'>
+        <image class='image' src='{{food.url}}'></image>
+        <view class='item-right'>
+          <view class='title'>{{food.name}}</view> 
+          <view class='foodPrice'>￥ {{food.price}}</view>
+          <view class='add' data-foodidx='{{index}}{{foodidx}}' data-price='{{food.price}}' data-name='{{food.name}}' catchtap='addShopcart'>+</view>
+        </view>
+      </view>
+
+    </view>
+  </view>
 
 
 </view>

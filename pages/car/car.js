@@ -119,6 +119,20 @@ Page({
   },
 
   toClear: function (e) {
+    let length = this.data.shopList.length
+    
+    if (length != 0) {
+      // 清除本地数据缓存
+      wx.setStorageSync('storageList', new Array)
+      wx.setStorageSync('total', 0)
+      wx.setStorageSync('count', 0)
+      // 清除data中数据
+      this.setData({ 
+        shopList: [],
+        total: 0,
+        count: 0
+      })
+    }
     console.log('清空购物车')
   },
 

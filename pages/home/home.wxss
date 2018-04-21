@@ -97,3 +97,41 @@ view {
   /* background:rgba(0,133,207,1); */
   background: #FF9C35;
 }
+
+.itemWrap, .itemList {
+  width: 100%;
+}
+.items {
+  padding-bottom: 20rpx;
+  border-top: 1rpx solid #c1c1c1;
+}
+.item-left, .item-right {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+.image {
+  width:280rpx;
+  height:280rpx;
+  vertical-align:middle;
+}
+.item-right {
+  text-align: right;
+  width: 50%;
+}
+.title {
+  font-weight: 500;
+  font-size: 36rpx;
+  margin-top: 10rpx;
+  text-align: right;
+}
+.foodPrice {
+  font-size: 36rpx;
+  color: #e02d3f;
+  font-weight: 600;
+  text-align: right;
+}
+.add {
+  margin-right: 0;
+  margin-top: 20rpx;
+}

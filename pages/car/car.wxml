@@ -17,6 +17,8 @@
     </view>
   </view>
 
+  <view class='noFood' wx:if='{{shopList.length == 0}}'>暂无商品，快去选购吧！</view>
+
   <!-- <view class="list-mask" hidden="{{cartIndexIsHidden}}" animation="{{animationData}}"> -->
   <view class="list-mask">
     <view class="shopcart__items" wx:for="{{shopList}}" wx:key='index' wx:for-item="item">
