@@ -30,7 +30,7 @@
   <view wx:if="{{showShopList}}">
     <view wx:for="{{shopList}}" wx:key="index" wx:for-item="food">
       <view>{{food.name}}</view>
-      <view>{{food.num}}份</view>
+      <view>数量：{{food.num}} 份</view>
       <view>单价：{{food.price}}￥</view>
     </view>
     <view>总计：{{total}}￥</view>
