@@ -2,9 +2,9 @@
   "pages":[
     "pages/home/home",
     "pages/aaa/aaa",
+    "pages/modal_input/modal_input",
     "examples/modal_input",
     "pages/input_modal/input_modal",
-    "pages/modal_input/modal_input",
     "pages/index/index",
     "pages/car/car",
     "pages/mine/mine",

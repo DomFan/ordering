@@ -14,8 +14,13 @@ Page({
     // 商户ID：2088621816522223
     console.log('确认付款')
     let that = this,
-        timeStamp = Date.parse(new Data()),
+        // timeStamp = new Date(),
+        timeStamp = Date.parse(new Date()),
         nonceStr = '12387919873'
+
+    console.log(timeStamp) // new Date(): Tue Apr 24 2018 09:58:10 GMT+0800 (中国标准时间)
+
+    return
     wx.requestPayment({
       timeStamp: '',
       nonceStr: '',

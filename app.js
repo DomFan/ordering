@@ -123,6 +123,7 @@ App({
   },
 
   globalData: {
-    userInfo: null
+    userInfo: null,
+    changeID: null
   }
 })
