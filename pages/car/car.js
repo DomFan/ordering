@@ -10,6 +10,7 @@ Page({
     count: 0
 
   },
+  // 去结算
   gotoCount: function (e) {
     // 商户ID：2088621816522223
     console.log('确认付款')
@@ -18,7 +19,10 @@ Page({
         timeStamp = Date.parse(new Date()),
         nonceStr = '12387919873'
 
-    console.log(timeStamp) // new Date(): Tue Apr 24 2018 09:58:10 GMT+0800 (中国标准时间)
+    // new Date(): Tue Apr 24 2018 09:58:10 GMT+0800 (中国标准时间)
+    // Date.parse(new Date()): 1524632990000
+    console.log(timeStamp) 
+    console.log(new Date(timeStamp))
 
     return
     wx.requestPayment({
@@ -123,6 +127,7 @@ Page({
     })
   },
 
+  // 清空购物车
   toClear: function (e) {
     let length = this.data.shopList.length
     
@@ -139,6 +144,7 @@ Page({
       })
     }
     console.log('清空购物车')
+    console.log(wx.getStorageSync('storageList'), this.data.total)
   },
 
   /**

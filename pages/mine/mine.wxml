@@ -33,7 +33,8 @@
       <view>数量：{{food.num}} 份</view>
       <view>单价：{{food.price}}￥</view>
     </view>
-    <view>总计：{{total}}￥</view>
+    <view wx:if='{{total}}'>总计：{{total}}￥</view>
+    <view wx:if='{{!total}}'>暂无数据</view>
   </view>
   <view class='listItem'>
     <view class='title'>已支付订单</view>
@@ -46,10 +47,11 @@
   <view wx:if="{{showPrepaidList}}" >
     <view wx:for="{{prepaidList}}" wx:key="index" wx:for-item="food">
       <view>{{food.name}}</view>
-      <view>{{food.num}}份</view>
+      <view>数量：{{food.num}}份</view>
       <view>单价：{{food.price}}￥</view>
     </view>
-    <view>总计：{{prepaidTotal}}￥</view>
+    <view wx:if='{{prepaidTotal}}'>总计：{{prepaidTotal}}￥</view>
+    <view wx:if='{{!prepaidTotal}}'>暂无数据</view>    
   </view>
 </view>
 

@@ -17,15 +17,39 @@ Page({
     showPrepaidList: false
   },
 
+  // 查看待支付订单btn
   openShopList: function (e) {
     let showShopList = this.data.showShopList
+    let shopList = wx.getStorageSync('storageList'),
+      total = wx.getStorageSync('total'),
+      count = wx.getStorageSync('count')
+
+    shopList.length > 0 ? this.setData({ shopList }) : this.setData({ shopList: new Array })
+    total > 0 ? this.setData({ total }) : this.setData({ total: 0 })
+    count > 0 ? this.setData({ count }) : this.setData({ count: 0 })
     this.setData({
       showShopList: !showShopList
     })
 
   },
+  // 查看已支付订单按钮
   openPrepaidList: function (e) {
     let showPrepaidList = this.data.showPrepaidList
+    let shopList = wx.getStorageSync('storageList'),
+      prepaidList = wx.getStorageSync('prepaidList'),
+      total = wx.getStorageSync('total'),
+      count = wx.getStorageSync('count'),
+      prepaidTotal = wx.getStorageSync('prepaidTotal'),
+      prepaidCount = wx.getStorageSync('prepaidCount')
+
+    shopList.length > 0 ? this.setData({ shopList }) : this.setData({ shopList: new Array })
+    // prepaidList.length > 0 ? this.setData({ prepaidList }) : this.setData({ prepaidList: new Array })
+    prepaidList.length <= 0 ? this.setData({ prepaidList: shopList }) : this.setData({ prepaidList })
+    total > 0 ? this.setData({ total }) : this.setData({ total: 0 })
+    count > 0 ? this.setData({ count }) : this.setData({ count: 0 })
+    // prepaidTotal > 0 ? this.setData({ prepaidTotal: total }) : this.setData({ prepaidTotal: 0 })
+    prepaidTotal <= 0 ? this.setData({ prepaidTotal: total }) : this.setData({ prepaidTotal })
+    prepaidCount > 0 ? this.setData({ prepaidCount: count }) : this.setData({ prepaidCount: 0 })
     this.setData({
       showPrepaidList: !showPrepaidList
     })
@@ -79,19 +103,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    let shopList = wx.getStorageSync('storageList'),
-      prepaidList = wx.getStorageSync('prepaidList'),
-      total = wx.getStorageSync('total'),
-      count = wx.getStorageSync('count'),
-      prepaidTotal = wx.getStorageSync('prepaidTotal'),
-      prepaidCount = wx.getStorageSync('prepaidCount')
+    // 页面显示时 订单详情 默认关闭
+    this.setData({
+      showShopList: false,
+      showPrepaidList: false
+    })
 
-    shopList.length > 0 ? this.setData({ shopList }) : ''
-    // prepaidList.length > 0 ? this.setData({ prepaidList }) : ''
-    total > 0 ? this.setData({ total }) : ''
-    count > 0 ? this.setData({ count }) : ''
-    prepaidTotal > 0 ? this.setData({ prepaidTotal }) : ''
-    prepaidCount > 0 ? this.setData({ prepaidCount }) : ''
+    
   },
 
   /**
