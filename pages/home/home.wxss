@@ -73,21 +73,22 @@ view {
   padding-left: 100rpx;
 }
 .add {
-  width: 40rpx;
-  height: 40rpx;
+  width: 50rpx;
+  height: 50rpx;
   border-radius: 50%;
   background-color: #FF9C35;
   text-align: center;
-  line-height: 39rpx;
-  font-size: 40rpx;
+  line-height: 50rpx;
+  font-size: 50rpx;
   float: right;
-  margin-right: 20rpx;
+  margin-top: 20rpx;
+  margin-right: 0;
   
 }
 /*抛物线动画*/
 .good_box{
-  width: 18px;
-  height: 18px;
+  width: 50rpx;
+  height: 50rpx;
   position: fixed;
   border-radius: 50%;
   overflow: hidden;
@@ -130,8 +131,5 @@ view {
   color: #e02d3f;
   font-weight: 600;
   text-align: right;
-}
-.add {
-  margin-right: 0;
-  margin-top: 20rpx;
+  padding-top: 20rpx;
 }

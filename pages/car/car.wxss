@@ -146,3 +146,10 @@ view {
   text-align: center;
   padding-top: 300rpx;
 }
+.food__add {
+  border: 1rpx solid black;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  text-align: center;
+}
