@@ -97,6 +97,7 @@ view {
   background-color: rgba(0,0,0,.7);
 }
 .shopcart__item {
+  padding: 0 20rpx;
   height: 130rpx;
   display: flex;
   background-color: #fff;
@@ -150,6 +151,13 @@ view {
   border: 1rpx solid black;
   width: 50rpx;
   height: 50rpx;
+  line-height: 50rpx;
   border-radius: 50%;
+  text-align: center;
+}
+.num {
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
   text-align: center;
 }

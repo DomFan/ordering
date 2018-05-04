@@ -66,3 +66,47 @@
   margin-top: 23rpx;
   float: right;
 }
+
+.foodItems {
+  width: 80%;
+}
+.foodItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between;
+  align-items: center; */
+  padding-bottom: 10rpx;
+}
+.foodName {
+  width: 100%;
+}
+.foodNum {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+.foodCount {
+  float: left;
+}
+.foodPrice {
+  float: right;
+}
+.num {
+  color: #FF9C35;
+}
+.foodTotal {
+  padding: 10rpx 0;
+  overflow: hidden;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.noFood {
+  text-align: center;
+  padding-bottom: 10rpx;
+}

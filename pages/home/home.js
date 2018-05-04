@@ -191,7 +191,7 @@ Page({
     wx.showToast({
       title: '加载中',
       icon: 'loading',
-      duration: 0,
+      duration: 100,
       mask: true
     })
     // 发送请求
@@ -205,7 +205,7 @@ Page({
       success: function (res) {
         console.log(res.data)
         that.setData({
-          navArray: res.data.navArray,
+          // navArray: res.data.navArray,
           foodArray: res.data.foodArray
         })
       }

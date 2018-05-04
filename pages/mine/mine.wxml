@@ -27,14 +27,21 @@
       <text wx:else>收起</text>
     </button>
   </view>
-  <view wx:if="{{showShopList}}">
-    <view wx:for="{{shopList}}" wx:key="index" wx:for-item="food">
-      <view>{{food.name}}</view>
-      <view>数量：{{food.num}} 份</view>
-      <view>单价：{{food.price}}￥</view>
+  <view class='foodItems' wx:if="{{showShopList}}">
+    <view class='foodItem' wx:for="{{shopList}}" wx:key="index" wx:for-item="food">
+      <view class='foodName'>{{food.name}}</view>
+      <view class='foodNum'>
+        <view class='foodCount'>数量：<text class='num'>{{food.num}}</text>份</view>
+        <view class='foodPrice'>单价：<text class='num'>{{food.price}}</text>￥</view>
+      </view>
     </view>
-    <view wx:if='{{total}}'>总计：{{total}}￥</view>
-    <view wx:if='{{!total}}'>暂无数据</view>
+    <view class='foodTotal' wx:if='{{total}}'>
+      <text class='left'>总计：</text>
+      <text class='right'>
+        <text class='num'>{{total}}</text>￥
+      </text>
+    </view>
+    <view class='noFood' wx:if='{{!total}}'>暂无数据</view>
   </view>
   <view class='listItem'>
     <view class='title'>已支付订单</view>
@@ -44,14 +51,21 @@
     </button>
     
   </view>
-  <view wx:if="{{showPrepaidList}}" >
-    <view wx:for="{{prepaidList}}" wx:key="index" wx:for-item="food">
-      <view>{{food.name}}</view>
-      <view>数量：{{food.num}}份</view>
-      <view>单价：{{food.price}}￥</view>
+  <view class='foodItems' wx:if="{{showPrepaidList}}" >
+    <view class='foodItem' wx:for="{{prepaidList}}" wx:key="index" wx:for-item="food">
+      <view class='foodName'>{{food.name}}</view>
+      <view class='foodNum'>
+        <view class='foodCount'>数量：<text class='num'>{{food.num}}</text> 份</view>
+        <view class='foodPrice'>单价：<text class='num'>{{food.price}}</text>￥</view>
+      </view>
     </view>
-    <view wx:if='{{prepaidTotal}}'>总计：{{prepaidTotal}}￥</view>
-    <view wx:if='{{!prepaidTotal}}'>暂无数据</view>    
+    <view class='foodTotal' wx:if='{{prepaidTotal}}'>
+      <text class='left'>总计：</text>
+      <text class='right'>
+        <text class='num'>{{prepaidTotal}}</text>￥
+      </text>
+    </view>
+    <view class='noFood' wx:if='{{!prepaidTotal}}'>暂无数据</view>    
   </view>
 </view>
 

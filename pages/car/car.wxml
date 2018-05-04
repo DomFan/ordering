@@ -29,7 +29,7 @@
         </view>
         <view class="cart__right">
           <view class="food__add food__add--delete" data-foodidx="{{index}}" data-price="{{item.price}}" data-name="{{item.name}}" catchtap="deleteShopcartInCart">-</view>
-          <text>{{item.num}}</text>
+          <text class='num'>{{item.num}}</text>
           <view class="food__add" data-foodidx="{{index}}" data-price="{{item.price}}" data-name="{{item.name}}" catchtap="addShopcartInCart">+</view>
         </view>
       </view>
